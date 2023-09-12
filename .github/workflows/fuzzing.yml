@@ -13,11 +13,11 @@ jobs:
     steps:
       - name: Call build.sh script
         run: |
-                 chmod +x ./build.sh
-                 ./build.sh
+                 chmod +x ${GITHUB_WORKSPACE}/build.sh
+                 ${GITHUB_WORKSPACE}/build.sh
         shell: bash
       
       - name: Run Docker container
         run: |
-                  chmod +x ./run.sh
-                  ./run.sh
+                  chmod +x ${GITHUB_WORKSPACE}/run.sh
+                  ${GITHUB_WORKSPACE}/run.sh
