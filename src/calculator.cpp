@@ -7,6 +7,7 @@
 using namespace std;
 
 float calculator(float num1, char op, float num2) {
+    // change of file as comment
     float result;
     int n = 37;
     switch (op) {
