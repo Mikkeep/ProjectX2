@@ -11,6 +11,8 @@ jobs:
     name: Build & run Docker container
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
       - name: Call build.sh script
         run: |
                  chmod +x ${GITHUB_WORKSPACE}/build.sh
